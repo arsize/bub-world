@@ -4,7 +4,7 @@ import { Icons } from '@/components/common/CustomIcon'
 import { Avatar, Badge, Switch } from 'antd'
 import { BulbOutlined, SettingOutlined } from '@ant-design/icons'
 
-const Header: React.FC = (props) => {
+const Header: React.FC = () => {
   return (
     <div className={style.header}>
       <div className="d-header">
@@ -13,7 +13,7 @@ const Header: React.FC = (props) => {
             <div className="title">
               <CustomIcon iconPath={Icons.SHUIDI} width={40} />
               <div style={{ marginLeft: '10px' }}>
-                滴水书屋{' '}
+                滴水书屋
                 <span style={{ fontSize: '10px', color: '#333333' }}>
                   Beta1.0
                 </span>
