@@ -15,22 +15,23 @@ const AllWorld = () => {
     f()
   }, [])
   return (
-    <AllBox>
-      <div className="topBar">主题世界</div>
+    <AllWorldWrapper>
+      <div className="topBar">
+        <h4>主题世界</h4>
+      </div>
       <div className="world-box">
         {worlds.map((k, i) => {
           return <WorldItem key={i} {...k} />
         })}
       </div>
-    </AllBox>
+    </AllWorldWrapper>
   )
 }
 
-const AllBox = styled.div`
+const AllWorldWrapper = styled.div`
   .topBar {
     width: 100%;
     height: 100px;
-    background-color: white;
   }
   .world-box {
     width: 100%;
